@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block contenuto%}
+<h2>Registrati</h2>
+
+<form action="{{ url_for('register') }}" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome"><br>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text"><br>
+    
+    <label for="username">Username:</label>
+    <input type="text"><br>
+    
+    <label for="password">Password:</label>
+    <input type="password"><br>
+    
+    <label for="confirmpassword">Conferma Password:</label> <!-- il label serve solo alla parte estetica, per far capire-->
+    <input type="password"><br>
+    
+    <input type="submit" value="Registrati">
+</form>
+{% endblock %}
